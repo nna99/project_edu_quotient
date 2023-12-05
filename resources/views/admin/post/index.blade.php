@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-10 offset-1">
         <div class="d-flex justify-content-between align-items-center">
-            <h1>Item list update</h1>
+            <h1>Item list</h1>
             <nav class="navbar">
                 <form class="form-inline" action="{{ route('dashboard') }}" method="get">
                     @csrf
