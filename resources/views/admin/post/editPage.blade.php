@@ -47,7 +47,11 @@
 
                             <label for="image">Item Photo</label>
                             <div class="text-center">
+                                @if ($data->image == null)
+                                <img src="{{ asset('default/default.jpg') }}" class="img-thumbnail" style="height: 250px;object-fit:contain;">
+                                @else
                                 <img src="{{ asset('postImage/'.$data->image) }}" class="img-thumbnail" style="height: 250px;object-fit:contain;">
+                                @endif
                             </div>
 
                             <div class="form-group">
@@ -57,8 +61,7 @@
                             <div class="form-group">
                                 <label for="">Status</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="itemStatus" @if ($data->publish == 1) checked
-                                    @endif id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="itemStatus" value="1" @if ($data->publish == 1) checked @endif id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Publish
                                     </label>

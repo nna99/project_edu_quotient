@@ -15,7 +15,7 @@
             <div class="col-6 offset-3">
                 <div class="card" style="margin-top: 200px">
                     <div class="card-header">
-                        Login Page
+                        <h3>Login Page</h3>
                     </div>
                     <div class="card-body">
                         <form action="{{ route('login') }}" method="post">

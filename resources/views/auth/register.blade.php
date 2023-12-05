@@ -16,7 +16,7 @@
 
                 <div class="card" style="margin-top: 200px">
                     <div class="card-header">
-                        Register Page
+                        <h3>Register Page</h3>
                     </div>
                     <div class="card-body">
                         <form action="{{ route('register') }}" method="post">
